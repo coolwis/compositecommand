@@ -44,7 +44,6 @@ class Tasks {
         let tasks = Array(list)
         // 함수 내부에서 if switch 호출하기 싫다면
         // 전략 객체로 바꿔준다.
-        
         return tasks.sorted(by: sortType.comparable)
     }
 }

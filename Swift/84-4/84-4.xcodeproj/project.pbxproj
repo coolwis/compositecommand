@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD6C03CC235E9E99007DC57D /* CompositeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C03CB235E9E99007DC57D /* CompositeTask.swift */; };
+		BD6C03CE235E9F86007DC57D /* TaskReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C03CD235E9F86007DC57D /* TaskReport.swift */; };
 		BD7C32E0235DC11B007AA635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C32DF235DC11B007AA635 /* AppDelegate.swift */; };
 		BD7C32E2235DC11B007AA635 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C32E1235DC11B007AA635 /* SceneDelegate.swift */; };
 		BD7C32E4235DC11B007AA635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C32E3235DC11B007AA635 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD6C03CB235E9E99007DC57D /* CompositeTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeTask.swift; sourceTree = "<group>"; };
+		BD6C03CD235E9F86007DC57D /* TaskReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReport.swift; sourceTree = "<group>"; };
 		BD7C32DC235DC11B007AA635 /* 84-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "84-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7C32DF235DC11B007AA635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7C32E1235DC11B007AA635 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				BD7C3313235DC12F007AA635 /* Task.swift */,
 				BD7C3315235DC2E4007AA635 /* Tasks.swift */,
 				BD7C3317235DC60E007AA635 /* SortType.swift */,
+				BD6C03CB235E9E99007DC57D /* CompositeTask.swift */,
+				BD6C03CD235E9F86007DC57D /* TaskReport.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -282,7 +288,9 @@
 				BD7C32E4235DC11B007AA635 /* ViewController.swift in Sources */,
 				BD7C32E0235DC11B007AA635 /* AppDelegate.swift in Sources */,
 				BD7C3314235DC12F007AA635 /* Task.swift in Sources */,
+				BD6C03CE235E9F86007DC57D /* TaskReport.swift in Sources */,
 				BD7C3318235DC60E007AA635 /* SortType.swift in Sources */,
+				BD6C03CC235E9E99007DC57D /* CompositeTask.swift in Sources */,
 				BD7C32E2235DC11B007AA635 /* SceneDelegate.swift in Sources */,
 				BD7C3316235DC2E4007AA635 /* Tasks.swift in Sources */,
 				BD7C32EA235DC11B007AA635 /* _4_4.xcdatamodeld in Sources */,
