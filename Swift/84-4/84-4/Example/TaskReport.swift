@@ -14,24 +14,29 @@ import Foundation
  TaskReport 는 Leaf 이자 Tree 가 된다.
  */
 class TaskReport {
-    private let task: CompositeTask
+    private let _task: CompositeTask
 
     private(set) var _list = [TaskReport]()
     
     public init(task: CompositeTask) {
-        self.task = task
+        self._task = task
     }
     
     func add(report: TaskReport) {
         _list.append(report)
     }
     
-    func getReport(sortType: SortType) {
-         let tasks_list.sorted(by: sortType.comparable)
-        TaskReport(task: self)
-        
-        for t in _list {
-            
-        }
+    func getReport(sortType: SortType) -> TaskReport {
+        return self
+    }
+}
+
+extension TaskReport {
+    var tasks: [TaskReport] {
+        return _list
+    }
+    
+    var task: CompositeTask {
+        return _task
     }
 }

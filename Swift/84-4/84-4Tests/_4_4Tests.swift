@@ -11,24 +11,33 @@ import XCTest
 
 class _4_4Tests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let root = CompositeTask(title: "Root", date: Date())
+        root.addTask(title: "sub1", date: Date())
+        root.addTask(title: "sub2", date: Date())
+        
+        let report: TaskReport = root.getReport(sortType: CompositeSortType.title_asc)
+        let sub1 = report.tasks[0].task
+        let sub2 = report.tasks[1].task
+        
+        sub1.addTask(title: "sub1_1", date: Date())
+        sub1.addTask(title: "sub1_2", date: Date())
+        
+        sub2.addTask(title: "sub2_1", date: Date())
+        sub2.addTask(title: "sub2_2", date: Date())
+        
+        let renderer1 = Renderer(factory: { ConsoleVisitor() })
+        renderer1.render(report: root.getReport(sortType: CompositeSortType.title_asc))
+         /*
+         실행 결과
+         
+         [ ] Root (2019-10-22 06:01:44 +0000)
+         - [ ] sub1 (2019-10-22 06:01:44 +0000)
+         -- [ ] sub1_1 (2019-10-22 06:01:44 +0000)
+         -- [ ] sub1_2 (2019-10-22 06:01:44 +0000)
+         - [ ] sub2 (2019-10-22 06:01:44 +0000)
+         -- [ ] sub2_1 (2019-10-22 06:01:44 +0000)
+         -- [ ] sub2_2 (2019-10-22 06:01:44 +0000)
+         */
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
