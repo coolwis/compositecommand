@@ -11,6 +11,7 @@ public class Task {
         this.date = date;
     }
 
+
     public void toggle() {
         isComplete = !isComplete;
     }
